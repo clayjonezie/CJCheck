@@ -28,4 +28,8 @@ public class Check{
                              given + " expected " + expected);
       }
    }
+
+   public static void check(String method, double given, double expected) {
+      check(method, given, expected, 0.0005);
+   }
 }
